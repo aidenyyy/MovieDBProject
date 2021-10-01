@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css"
+      integrity="sha512-JApjWRnfonFeGBY7t4yq8SWr1A6xVYEJgO/UMIYONxaR3C9GETKUg0LharbJncEzJF5Nmiv+Pr5QNulr81LjGQ=="
+      crossorigin="anonymous"
+    />
+    <title>MovieDB</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <div class="logo">
+          <img
+            id="logo-img"
+            src="./blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+            alt="LOGO"
+          />
+        </div>
+        <ul class="nav-bar">
+          <li class="nav-home" name="HOME">HOME</li>
+          <li class="nav-liked" name="LIKED-LIST">LIKED LIST</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="select-container">
+        <select name="select" id="select">
+          <option value="popular">Popular</option>
+          <option value="now_playing">Now Playing</option>
+          <option value="top_rated">Top Rated</option>
+          <option value="upcoming">Upcoming</option>
+        </select>
+      </div>
+      <div class="page-nav">
+        <button class="nav-button-prev">prev</button>
+        <p class="page-number">1/500</p>
+        <button class="nav-button-next">next</button>
+      </div>
+      <div
+        class="movie-container"
+        name="HOME"
+        id="movie-view"
+        style="display: block"
+      >
+        <div class="grid"></div>
+      </div>
+      <div
+        class="movie-container"
+        name="LIKED-LIST"
+        id="liked-view"
+        style="display: none"
+      >
+        <div class="grid"></div>
+      </div>
+    </main>
+    <div id="modal" style="display: none">
+      <div class="modal-container">
+        <div class="close-modal">
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+        <div class="modal-content">
+          <div class="modal-img-container"></div>
+
+          <div class="modal-info">
+            <h3 class="modal-title"></h3>
+
+            <div class="modal-overview-container">
+              <h4>Overview</h4>
+              <p class="modal-overview"></p>
+            </div>
+
+            <div class="modal-genre-container">
+              <h4>Genres</h4>
+              <div class="modal-genre" styles="display: flex;"></div>
+            </div>
+
+            <div class="modal-rating-container">
+              <h4>Rating</h4>
+              <p class="modal-rating"></p>
+            </div>
+
+            <div class="modal-production-container">
+              <h4>Production companies</h4>
+              <div class="modal-production" styels="display: flex;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

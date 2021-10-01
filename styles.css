@@ -1,0 +1,186 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(91, 91, 91);
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 50px;
+}
+
+#logo-img {
+  height: 80px;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-bar li {
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.nav-home,
+.nav-liked {
+  cursor: pointer;
+}
+
+.select-container {
+  margin-top: 30px;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button-prev,
+.nav-button-next {
+  margin: 30px 130px;
+  padding: 7px 10px;
+  text-align: center;
+  border: 1px rgb(141, 204, 233) solid;
+  border-radius: 5px;
+  color: rgb(141, 204, 233);
+  background-color: white;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  align-items: center;
+}
+
+.movie-card {
+  border: 5px rgb(0, 0, 0, 0.01) solid;
+}
+
+.grid .movie-card-img img {
+  width: 23rem;
+}
+
+.movie-card-title {
+  margin: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.movie-card-title:hover {
+  color: rgb(141, 204, 233);
+}
+
+.movie-card-rating {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ion-icon {
+  font-size: 25px;
+  margin-right: 7px;
+  color: rgb(246, 188, 53);
+}
+
+ion-icon[name='heart-outline'],
+ion-icon[name='heart'] {
+  margin-left: 14.5rem;
+  color: rgb(255, 0, 20);
+  cursor: pointer;
+}
+ion-icon[name='close-outline'] {
+  color: rgb(91, 91, 91);
+}
+
+.rating {
+  padding: none;
+  margin: 0px;
+}
+
+#modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 200vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  display: flex;
+  height: 500px;
+  max-width: 800px;
+}
+
+.modal-img {
+  height: 350px;
+  margin: 75px 20px 75px 30px;
+}
+
+.modal-info {
+  width: 400px;
+  margin: 75px 50px 75px 5px;
+}
+
+.modal-info h3 {
+  margin-bottom: 20px;
+}
+
+.modal-info * {
+  margin-bottom: 10px;
+}
+
+.genre-box {
+  border-style: solid;
+  margin-right: 2px;
+  padding: 2px;
+  background-color: white;
+}
+.genre-box.active.focus,
+.genre-box.active:focus,
+.genre-box.focus,
+.genre-box:active.focus,
+.genre-box:active:focus,
+.genre-box:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: white;
+}
+
+.modal-container {
+  height: 500px;
+  max-width: 800px;
+  background-color: white;
+  position: relative;
+}
+
+.close-modal {
+  padding: 1rem;
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.modal-production img {
+  height: 20px;
+}
